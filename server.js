@@ -15,3 +15,6 @@ app.get('/delete/:id', function(req, res){
 app.get('/sayhello/:name', function(req, res){
     res.send('Hello ' +req.params.name);
 })
+app.get('/name/:name1/:name2', function(req, res){
+    res.send(req.params.name1 +' '+req.params.name2);
+})
