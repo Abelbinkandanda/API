@@ -9,3 +9,9 @@ app.get('/abk', function (req,res){
 app.get('/kand', function(req, res){
     res.send('hello are u okay?');
 })
+app.get('/delete/:id', function(req, res){
+    res.send(`${req.params.id} Deleted`);
+})
+app.get('/sayhello/:name', function(req, res){
+    res.send('Hello ' +req.params.name);
+})
